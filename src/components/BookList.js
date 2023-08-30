@@ -14,8 +14,8 @@ const BookList = ({ books, onDelete }) => (
 BookList.propTypes = {
   books: PropTypes.arrayOf(
     PropTypes.shape({
-      bookTitle: PropTypes.string.isRequired,
-      bookAuthor: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired,
+      author: PropTypes.string.isRequired,
       id: PropTypes.number.isRequired,
     }),
   ).isRequired,
