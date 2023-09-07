@@ -1,15 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import BookStoreComponent from './BookStoreComponent';
+import { useSelector , useDispatch } from 'react-redux';
 
-const BookList = ({ books, onDelete }) => (
-  <div className="book-list">
+const BookList = () => {
+   const books = useSelector(state => state.books.books);
+   const dispatch = useDispatch();
+   return (
+   <div className="book-list">
     <h2>Books</h2>
     {books.map((book) => (
-      <BookStoreComponent key={book.id} book={book} onDelete={onDelete} />
+      <BookStoreComponent key={book.id} book={book} />
     ))}
+    <hr/>
   </div>
-);
+  ) 
+};
 
 BookList.propTypes = {
   books: PropTypes.arrayOf(
