@@ -5,7 +5,7 @@ import { removeBook } from '../redux/books/booksSlice';
 
 const BookStoreComponent = ({ book }) => {
   const dispatch = useDispatch();
-  
+
   const handleRemoveBook = (bookId) => {
     dispatch(removeBook(bookId));
   };
@@ -21,16 +21,15 @@ const BookStoreComponent = ({ book }) => {
         Delete
       </button>
     </div>
-  ); 
-}
+  );
+};
 
 BookStoreComponent.propTypes = {
   book: PropTypes.shape({
     title: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired,
-    id: PropTypes.number.isRequired,
+    item_id: PropTypes.number.isRequired,
   }).isRequired,
-  onDelete: PropTypes.func.isRequired,
 };
 
 export default BookStoreComponent;

@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { addBook } from '../redux/books/booksSlice';
 import { v4 as uuidv4 } from 'uuid';
+import { addBook } from '../redux/books/booksSlice';
 
 const BookForm = () => {
   const [title, setTitle] = useState('');
-  const [author, setAuthor] = useState(''); 
+  const [author, setAuthor] = useState('');
 
   const dispatch = useDispatch();
 
@@ -16,7 +15,7 @@ const BookForm = () => {
       const newBook = {
         id: uuidv4(), // Generate a unique ID
         title,
-        author, 
+        author,
       };
       dispatch(addBook(newBook));
       setTitle('');
@@ -34,10 +33,6 @@ const BookForm = () => {
       </form>
     </div>
   );
-};
-
-BookForm.propTypes = {
-  onAddBook: PropTypes.func.isRequired,
 };
 
 export default BookForm;
