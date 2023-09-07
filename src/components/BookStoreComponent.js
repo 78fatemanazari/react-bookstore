@@ -12,7 +12,7 @@ const BookStoreComponent = ({ book }) => {
 
   return (
     <div className="book">
-      <h2>{book.title} {book.item_id}</h2>
+      <h2>{book.title}</h2>
       <p>
         Author:
         {book.author}
