@@ -52,11 +52,8 @@ You will create an simplified version of it that allows you to:
 - Redux
 - Deployment
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p> 
 
-## 🚀 Live Demo <a name="live-demo"></a>
-
-The live version is not yet available.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
