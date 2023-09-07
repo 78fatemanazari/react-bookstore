@@ -1,16 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import BookStoreComponent from './BookStoreComponent';
-import { useSelector , useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 
 const BookList = () => {
-   const books = useSelector(state => state.books.books);
-   const dispatch = useDispatch();
+   const books = useSelector(state => state.books.books); 
    return (
    <div className="book-list">
     <h2>Books</h2>
     {books.map((book) => (
-      <BookStoreComponent key={book.id} book={book} />
+      <BookStoreComponent key={book.item_id} book={book} />
     ))}
     <hr/>
   </div>
