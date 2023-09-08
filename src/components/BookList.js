@@ -12,7 +12,7 @@ const BookList = () => {
   }, [dispatch]);
 
   return (
-    <div className="book-list-container">
+    <div>
       {booksStore.books.map((book) => (
         <BookStoreComponent key={book.item_id} book={book} />
       ))}
