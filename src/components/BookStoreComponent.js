@@ -37,14 +37,14 @@ const BookStoreComponent = ({ book }) => {
           <p className="completed">Completed</p>
         </span>
       </div>
-      <div class="Line-2"></div>
+      <div className="Line-2" />
       <div className="part3">
         <p className="current-chapter">CURRENT CHAPTER</p>
         <p className="chapter">Chapter 17</p>
         <button className="update-btn" type="button">
           UPDATE PROGRESS
         </button>
-      </div>  
+      </div>
     </div>
   );
 };

@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <div>
       <BookList books={books} onDelete={handleDeleteBook} />
-      <div class="Line"></div>
+      <div className="Line" />
       <BookForm onAddBook={handleAddBook} />
     </div>
   );

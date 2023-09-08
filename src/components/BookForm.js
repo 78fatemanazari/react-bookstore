@@ -29,27 +29,11 @@ const BookForm = () => {
 
   return (
     <div className="book-form">
-      <h2>Add New Book</h2>
+      <h2 className="new-book">Add New Book</h2>
       <form onSubmit={handleSubmit}>
-        <div>
-          <input
-            type="text"
-            placeholder="Title"
-            value={title}
-            onChange={(e) => setTitle(e.target.value)}
-          />
-        </div>
-        <div>
-          <input
-            type="text"
-            placeholder="Author"
-            value={author}
-            onChange={(e) => setAuthor(e.target.value)}
-          />
-        </div>
-        <p>
-          <button type="submit">Add Book</button>
-        </p>
+        <input className="title-input" type="text" placeholder="Title" value={title} onChange={(e) => setTitle(e.target.value)} />
+        <input className="author-input" type="text" placeholder="Author" value={author} onChange={(e) => setAuthor(e.target.value)} />
+        <button className="add-btn" type="submit">Add Book</button>
       </form>
     </div>
   );
