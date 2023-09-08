@@ -1,14 +1,14 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   background-color: #f5f6fa;
 }
 
-.navigation{
+.navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,35 +19,35 @@ body{
   background-color: white;
 }
 
-.nav-items{
+.nav-items {
   display: flex;
   gap: 20px;
   align-items: center;
 }
 
-.title{
+.title {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.875rem;
   font-weight: bold;
   color: #0290ff;
 }
 
-.pages{
+.pages {
   font-family: 'Montserrat', sans-serif;
   font-size: 0.813rem;
   color: #121212;
   text-decoration: none;
 }
 
-input::placeholder{
+input::placeholder {
   color: #c4c4c4;
 }
 
-img{
+img {
   cursor: pointer;
 }
 
-.bookslist-container{
+.bookslist-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -57,16 +57,16 @@ img{
   padding: 2rem 9.188rem 1.625rem 1.688rem;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
-.book-container{
+.book-container {
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
 
-.book-title{
+.book-title {
   width: 12.313rem;
   height: 1.813rem;
   font-family: 'Roboto Slab', serif;
@@ -76,7 +76,7 @@ img{
   font-weight: bold;
 }
 
-.book-author{
+.book-author {
   margin: 0.25rem 0 0;
   font-family: 'Roboto Slab', serif;
   font-size: 0.875rem;
@@ -84,7 +84,7 @@ img{
   color: #4386bf;
 }
 
-.buttons{
+.buttons {
   margin: 0.188rem 0.938rem 0.125rem 0;
   font-family: 'Roboto Slab', serif;
   font-size: 0.875rem;
@@ -95,23 +95,23 @@ img{
   cursor: pointer;
 }
 
-.buttons:hover{
+.buttons:hover {
   color: #0290ff;
 }
 
-.book-progress{
+.book-progress {
   display: flex;
   align-items: center;
 }
 
-.precentage{
+.precentage {
   margin: 0.063rem 5.75rem 0 0.688rem;
   font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
   color: #000;
 }
 
-.completed{
+.completed {
   margin: 0.438rem 4.938rem 0.75rem 0.75rem;
   opacity: 0.5;
   font-family: 'Montserrat', sans-serif;
@@ -119,18 +119,18 @@ img{
   color: #121212;
 }
 
-.Line-2{
+.Line-2 {
   width: 0.125rem;
   height: 4.375rem;
   border: solid 1px #e8e8e8;
 }
 
-.part3{
+.part3 {
   display: flex;
   flex-direction: column;
 }
 
-.current-chapter{
+.current-chapter {
   margin: 0.063rem 3.625rem 0 3.688rem;
   opacity: 0.5;
   font-family: 'Roboto Slab', serif;
@@ -138,16 +138,16 @@ img{
   font-weight: 300;
 }
 
-.chapter{
+.chapter {
   margin: 0.438rem 6.813rem 0.25rem 3.688rem;
   font-family: 'Roboto Slab', serif;
   font-size: 1rem;
   font-weight: 300;
   color: #121212;
-  margin-bottom: 25px
+  margin-bottom: 25px;
 }
 
-.update-btn{
+.update-btn {
   width: 11.5rem;
   height: 2.063rem;
   margin: 0.75rem 0 0.563rem 3.688rem;
@@ -157,13 +157,13 @@ img{
   font-family: 'Roboto Slab', serif;
   font-size: 0.813rem;
   font-weight: 300;
-  color: #ffffff;
+  color: #fff;
   text-align: center;
   border: none;
   cursor: pointer;
 }
 
-.update-btn:hover{
+.update-btn:hover {
   background: #fff;
   color: #0290ff;
   border: 1px solid #0290ff;
@@ -178,11 +178,11 @@ img{
   border: solid 1px #e8e8e8;
 }
 
-.book-form{
+.book-form {
   margin-left: 6.25rem;
 }
 
-.new-book{
+.new-book {
   width: 10.875rem;
   height: 1.5rem;
   margin-bottom: 1.188rem;
@@ -193,31 +193,31 @@ img{
   color: #888;
 }
 
-form{
+form {
   display: flex;
   gap: 30px;
   margin-bottom: 16.56rem;
 }
 
-.title-input{
+.title-input {
   width: 53%;
   height: 2.813rem;
   padding: 0.813rem 35.688rem 0.813rem 1.063rem;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
-.author-input{
+.author-input {
   width: 17.813rem;
   height: 2.813rem;
   padding: 0.375rem 0.938rem 0.563rem 1rem;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
-.add-btn{
+.add-btn {
   width: 11.5rem;
   height: 2.813rem;
   padding: 0.801rem 1.188rem 0.886rem 1.375rem;
@@ -233,7 +233,7 @@ form{
   cursor: pointer;
 }
 
-.add-btn:hover{
+.add-btn:hover {
   background: #fff;
   color: #0290ff;
   border: 1px solid #0290ff;
