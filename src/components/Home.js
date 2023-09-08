@@ -16,7 +16,6 @@ const Home = () => {
 
   return (
     <div>
-      <h1>Home Page</h1>
       <BookList books={books} onDelete={handleDeleteBook} />
       <BookForm onAddBook={handleAddBook} />
     </div>
